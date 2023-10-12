@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Car } from 'src/app/shared/models/car';
+import { Car } from '../../models/car/car';
+
 
 
 @Injectable({
@@ -9,4 +10,6 @@ import { Car } from 'src/app/shared/models/car';
 export abstract class CarAbstractService {
 
   abstract getCars(): Observable<Car[]>;
+
+  abstract getCarByBrand(brandId:number):Observable<Car[]>
 }

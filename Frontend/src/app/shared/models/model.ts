@@ -1,5 +1,8 @@
+import { Brand } from "./brand";
+
 export interface Model {
     id:number;
     name:string;
-    brandId:number;
+   // brandId:number,
+    brand:Brand
 }

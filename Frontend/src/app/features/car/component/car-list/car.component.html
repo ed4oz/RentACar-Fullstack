@@ -1,0 +1,30 @@
+<!-- <div class="alert alert-primary" role="alert">
+    This is a primary alert—check it out!
+  </div>
+  <button (click)="btnClick()">CLICK </button> -->
+
+  <div class="alert alert-primary" role="alert">
+    Cars 
+</div>
+<button (click)="btnClick()">Cars a git</button>
+
+<form class="w-50 me-3 mt-5 mb-5">
+  <input type="search" class="form-control" placeholder="Search..." [(ngModel)]=" textFilter"  name="filterText"
+    id="filterText">
+</form>
+
+<div class="row">
+  <div *ngFor="let car of cars | filter:textFilter"
+  class="card m-3" style="width: 18rem;">
+  <img [src]="car.imageUrl" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{car.model.name}}</h5>
+      <p class="card-text">{{car.plate}}</p>
+      <a class="btn btn-primary">Rent</a>
+    </div>
+  </div>
+</div>
+
+
+
+

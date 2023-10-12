@@ -1,4 +1,4 @@
-import { Model } from "./model"
+import { Model } from "src/app/shared/models/model"
 
 export interface Car {
     id:number
@@ -6,9 +6,9 @@ export interface Car {
     dailyPrice:number
     modelYear:number
     state:number
-    modelId:number
-    modelName:string
-    imgUrl:string
+   //modelId:number
+    imageUrl:string
     model:Model
     // imgUrl?:string gelmese de olur için ? koyduk
 }
+

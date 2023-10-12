@@ -5,17 +5,19 @@ import { Not404Component } from './components/not404/not404.component';
 
 
 
+
 @NgModule({
   declarations: [
     NaviComponent,
-    Not404Component
+    Not404Component,
   ],
   imports: [
     CommonModule
   ],
   exports:[
     NaviComponent,
-    Not404Component
+    Not404Component,
+   
   ]
 })
 export class SharedModule { }
